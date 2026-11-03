@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conjugar – Conjugaison espagnole</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>🇪🇸 Conjugar</h1><p>Apprends la conjugaison espagnole, temps par temps</p></header>
+<main>
+<div class="modes"><button id="mLearn" class="on">📖 Apprendre</button><button id="mPlay">✍️ S'entraîner</button></div>
+
+<section id="learn">
+<div class="tabs" id="tabs"></div>
+<div class="card" id="rule"></div>
+<div class="verbs" id="verbs"></div>
+<div class="card"><h2 id="vt"></h2><div class="tblwrap"><table id="tbl"></table></div></div>
+</section>
+
+<section id="play" class="hide">
+<div class="card">
+<div class="tabs" id="ptabs"></div>
+<div class="q" id="q"></div>
+<input id="ans" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="Ta réponse…">
+<div class="acc" id="acc"></div>
+<div class="msg" id="msg"></div>
+<button id="go" class="on">Valider</button>
+<p class="score" id="score">Score : 0 / 0</p>
+</div>
+</section>
+</main>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
